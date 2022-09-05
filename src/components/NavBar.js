@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
+import Logo from "assets/logo.svg";
 
 function NavBar() {
   const [click, setClick] = useState(false);
@@ -11,8 +12,7 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            CodeBucks
-            <i className="fas fa-code"></i>
+            <img src={Logo} alt="Logo" />
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -35,7 +35,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                About
+                Network
               </NavLink>
             </li>
             <li className="nav-item">
@@ -46,7 +46,7 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Blog
+                Jobs
               </NavLink>
             </li>
             <li className="nav-item">
@@ -57,10 +57,14 @@ function NavBar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Contact Us
+                Messages
               </NavLink>
             </li>
           </ul>
+
+          <div className="serchBoxArea">
+            <input type="text" placeholder="some text in ther" className="searchBox" />
+          </div>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
           </div>
