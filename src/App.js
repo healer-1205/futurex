@@ -1,10 +1,10 @@
 import "./App.scss";
-import NavBar from "./components/NavBar";
+import NavBar from "./layouts/NavBar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from "./components/Pages/Home";
-import { About } from "./components/Pages/About";
-import { Blog } from "./components/Pages/Blog";
-import { Contact } from "./components/Pages/Contact";
+import { Home } from "./Pages/Home";
+import { About } from "./Pages/About";
+import { Blog } from "./Pages/Blog";
+import { Contact } from "./Pages/Contact";
 
 function App() {
   return (
