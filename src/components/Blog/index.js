@@ -4,7 +4,6 @@ import LikeIcon from "assets/images/utils/likeIcon.svg";
 import CommentIcon from "assets/images/utils/commentIcon.svg";
 import ContactIcon from "assets/images/utils/contactIcon.svg";
 import ShareIcon from "assets/images/utils/shareIcon.svg";
-import "scss/blog.scss";
 
 export const Blog = (props) => {
 	return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import "scss/home.scss";
+import "scss/Home.scss";
 import { BasicButton } from "components/Button/BasicButton";
 import { Blog } from "components/Blog";
 import { Connection } from "components/Connection"
@@ -14,7 +14,7 @@ import ShareIcon from "assets/images/utils/shareIcon.svg";
 import Avatar from "assets/images/utils/avatar.svg";
 
 const Wrapper = styled.div`
-  background: url(${(props) => props.bgImg}) no-repeat center center fixed;
+  
   padding-top: 30px;
 `;
 
@@ -142,9 +142,17 @@ export const Home = () => {
 
         </div>
         <div className="suggested col-span-1">
-          <p className="suggested__title mx-5">Suggested connection</p>
+          <p className="suggested__title mx-5 lg:mt-0 mt-5">Suggested connection</p>
           <div className="mt-5 grid grid-cols-2">
-            <Connection name="Bob Zhang" job="Data Analyst at IQVIA" />
+            <Connection name="Bob Zhang" job="Data Analyst at IQVIA" avatar={Avatar} />
+            <Connection name="Bob Zhang" job="Data Analyst at IQVIA" avatar={Avatar} />
+            <Connection name="Bob Zhang" job="Data Analyst at IQVIA" avatar={Avatar} />
+            <Connection name="Bob Zhang" job="Data Analyst at IQVIA" avatar={Avatar} />
+          </div>
+          <div className="flex justify-center">
+            <BasicButton color="#ffffff" marginTop="10px" borderColor="#FFFFFF">
+              Load more
+            </BasicButton>
           </div>
         </div>
       </div>
