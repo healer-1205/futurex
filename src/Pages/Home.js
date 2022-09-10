@@ -5,12 +5,13 @@ import "scss/Home.scss";
 import { BasicButton } from "components/Button/BasicButton";
 import { Blog } from "components/Blog";
 import { Connection } from "components/Connection"
-import BackgroundTop from "assets/images/background/backgroundTop.svg";
+import HeaderImg from "assets/images/background/HeaderImg.svg";
 import ProfileIcon from "assets/images/homepage/profileIcon.svg";
 import Edit from "assets/images/utils/editIcon.svg";
 import Line from "assets/images/utils/lineIcon.svg";
 import ImageIcon from "assets/images/utils/imageIcon.svg";
 import ShareIcon from "assets/images/utils/shareIcon.svg";
+import MoreIcon from "assets/images/utils/moreIcon.svg";
 import Avatar from "assets/images/utils/avatar.svg";
 
 const Wrapper = styled.div`
@@ -23,7 +24,7 @@ export const Home = () => {
   const [tabState, setTabState] = useState("forYou");
 
   return (
-    <Wrapper bgImg={BackgroundTop} className="pt-7 lg:px-20 md: px-5">
+    <Wrapper bgImg={HeaderImg} className="pt-7 lg:px-20 md: px-5">
       <div className="grid lg:grid-cols-4 grid-cols-1">
         <div className="mine col-span-1">
           <div className="profile">
@@ -150,9 +151,10 @@ export const Home = () => {
             <Connection name="Bob Zhang" job="Data Analyst at IQVIA" avatar={Avatar} />
           </div>
           <div className="flex justify-center">
-            <BasicButton color="#ffffff" marginTop="10px" borderColor="#FFFFFF">
+            <button type="button" className="loadButton flex items-center">
               Load more
-            </BasicButton>
+              <img src={MoreIcon} alt="More" width="12" height="12" className="ml-3" />
+            </button>
           </div>
         </div>
       </div>
