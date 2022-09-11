@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "scss/Home.scss";
+import "scss/home.scss";
 import { BasicButton } from "components/Button/BasicButton";
 import { Blog } from "components/Blog";
 import { Connection } from "components/Connection"
