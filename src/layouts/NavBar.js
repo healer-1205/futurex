@@ -32,7 +32,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/about"
+                to="/network"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -43,7 +43,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/blog"
+                to="/jobs"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
@@ -54,7 +54,7 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/contact"
+                to="/messages"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}

@@ -3,9 +3,9 @@ import NavBar from "./layouts/NavBar";
 import { Footer } from "./layouts/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./Pages/Home";
-import { About } from "./Pages/About";
-import { Blog } from "./Pages/Blog";
-import { Contact } from "./Pages/Contact";
+import { Network } from "./Pages/Network";
+import { Job } from "./Pages/Job";
+import { Message } from "./Pages/Message";
 
 function App() {
   return (
@@ -15,9 +15,9 @@ function App() {
         {/* <div className="pages"> */}
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/contact" component={Contact} />
+          <Route path="/network" component={Network} />
+          <Route path="/jobs" component={Job} />
+          <Route path="/messages" component={Message} />
         </Switch>
         {/* </div> */}
         <Footer />

@@ -1,12 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import styled from "styled-components";
 import "scss/Home.scss";
 import { BasicButton } from "components/Button/BasicButton";
 import { Blog } from "components/Blog";
 import { Connection } from "components/Connection"
-import HeaderImg from "assets/images/background/HeaderImg.svg";
-import ProfileIcon from "assets/images/homepage/profileIcon.svg";
+import ProfileIcon from "assets/images/homepage/profileIcon.png";
 import Edit from "assets/images/utils/editIcon.svg";
 import Line from "assets/images/utils/lineIcon.svg";
 import ImageIcon from "assets/images/utils/imageIcon.svg";
@@ -14,17 +12,12 @@ import ShareIcon from "assets/images/utils/shareIcon.svg";
 import MoreIcon from "assets/images/utils/moreIcon.svg";
 import Avatar from "assets/images/utils/avatar.svg";
 
-const Wrapper = styled.div`
-  
-  padding-top: 30px;
-`;
-
 export const Home = () => {
 
   const [tabState, setTabState] = useState("forYou");
 
   return (
-    <Wrapper bgImg={HeaderImg} className="pt-7 lg:px-20 md: px-5">
+    <div className="pt-7 lg:px-20 md: px-5 bg-[url('assets/images/background/Header.png')] bg-no-repeat bg-top bg-[length:100%_auto]">
       <div className="grid lg:grid-cols-4 grid-cols-1">
         <div className="mine col-span-1">
           <div className="profile">
@@ -158,6 +151,6 @@ export const Home = () => {
           </div>
         </div>
       </div>
-    </Wrapper>
+    </div>
   );
 };
