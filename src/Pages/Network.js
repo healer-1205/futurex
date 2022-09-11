@@ -40,14 +40,43 @@ export const Network = () => {
           </div>
         </div>
         <div className="col-span-3 mx-5">
-          <div className="flex items-center justify-between ml-5">
-            <p className="font-['Poppins'] font-bold non-italic text-2xl text-white">People you may meet in XXX conference</p>
+          {/* conference */}
+          <div className="flex items-center justify-between md:ml-5 ml-0 md:mt-0 mt-4">
+            <p className="font-['Poppins'] font-bold non-italic md:text-2xl text-xl text-white">People you may meet in XXX conference</p>
             <div className="flex">
-              <p className="font-['Poppins'] font-normal non-italic text-xl text-[#7AF7FF]">See all</p>
+              <p className="font-['Poppins'] font-normal non-italic md:text-xl text-sm text-[#7AF7FF]">See all</p>
               <img src={RightArrow} alt="RightArrow" />
             </div>
           </div>
-          <div className="grid grid-cols-4 mt-7">
+          <div className="grid md:grid-cols-4 grid-cols-1 mt-7">
+            <ProfileCard avatar={Avatar} name="Bob Zhang" job="Research Assistant at Tsinghua University" university="Tsinghua University" thumbnail={Thumbnail}></ProfileCard>
+            <ProfileCard avatar={Avatar} name="Bob Zhang" job="Research Assistant at Tsinghua University" university="Tsinghua University" thumbnail={Thumbnail}></ProfileCard>
+            <ProfileCard avatar={Avatar} name="Bob Zhang" job="Research Assistant at Tsinghua University" university="Tsinghua University" thumbnail={Thumbnail}></ProfileCard>
+            <ProfileCard avatar={Avatar} name="Bob Zhang" job="Research Assistant at Tsinghua University" university="Tsinghua University" thumbnail={Thumbnail}></ProfileCard>
+          </div>
+          {/* university */}
+          <div className="flex items-center justify-between md:ml-5 ml-0 md:my-5 mt-4">
+            <p className="font-['Poppins'] font-bold non-italic md:text-2xl text-xl text-white">People you may know from Tsinghua University</p>
+            <div className="flex">
+              <p className="font-['Poppins'] font-normal non-italic md:text-xl text-sm text-[#7AF7FF]">See all</p>
+              <img src={RightArrow} alt="RightArrow" />
+            </div>
+          </div>
+          <div className="grid md:grid-cols-4 grid-cols-1 mt-7">
+            <ProfileCard avatar={Avatar} name="Bob Zhang" job="Research Assistant at Tsinghua University" university="Tsinghua University" thumbnail={Thumbnail}></ProfileCard>
+            <ProfileCard avatar={Avatar} name="Bob Zhang" job="Research Assistant at Tsinghua University" university="Tsinghua University" thumbnail={Thumbnail}></ProfileCard>
+            <ProfileCard avatar={Avatar} name="Bob Zhang" job="Research Assistant at Tsinghua University" university="Tsinghua University" thumbnail={Thumbnail}></ProfileCard>
+            <ProfileCard avatar={Avatar} name="Bob Zhang" job="Research Assistant at Tsinghua University" university="Tsinghua University" thumbnail={Thumbnail}></ProfileCard>
+          </div>
+          {/* current/last */}
+          <div className="flex items-center justify-between md:ml-5 ml-0 md:my-5 mt-4">
+            <p className="font-['Poppins'] font-bold non-italic md:text-2xl text-xl text-white">People you may know from Current/last university (if any)</p>
+            <div className="flex">
+              <p className="font-['Poppins'] font-normal non-italic md:text-xl text-sm text-[#7AF7FF]">See all</p>
+              <img src={RightArrow} alt="RightArrow" />
+            </div>
+          </div>
+          <div className="grid md:grid-cols-4 grid-cols-1 mt-7">
             <ProfileCard avatar={Avatar} name="Bob Zhang" job="Research Assistant at Tsinghua University" university="Tsinghua University" thumbnail={Thumbnail}></ProfileCard>
             <ProfileCard avatar={Avatar} name="Bob Zhang" job="Research Assistant at Tsinghua University" university="Tsinghua University" thumbnail={Thumbnail}></ProfileCard>
             <ProfileCard avatar={Avatar} name="Bob Zhang" job="Research Assistant at Tsinghua University" university="Tsinghua University" thumbnail={Thumbnail}></ProfileCard>
