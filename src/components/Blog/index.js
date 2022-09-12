@@ -42,6 +42,7 @@ export const Blog = (props) => {
 						<img src={CommentIcon} alt="comment" width="16" height="16" />
 					</div>
 					<div className="flex">
+						<p className="blogFooter__title pr-2">Forward</p>
 						<img src={ContactIcon} alt="contact" width="16" height="16" />
 					</div>
 					<div className="flex">
