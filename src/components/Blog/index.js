@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import FollowIcon from "assets/images/utils/followIcon.svg";
 import LikeIcon from "assets/images/utils/likeIcon.svg";
 import CommentIcon from "assets/images/utils/commentIcon.svg";
@@ -6,10 +7,13 @@ import ContactIcon from "assets/images/utils/contactIcon.svg";
 import ShareIcon from "assets/images/utils/shareIcon.svg";
 
 export const Blog = (props) => {
+
+	const history = useHistory();
+
 	return (
 		<div className="flex flex-col">
 			<div className="flex justify-between blogHead">
-				<div className="flex">
+				<div className="flex" onClick={() => history.push("/")} style={{ cursor: "pointer" }}>
 					<img src={props.avatar} alt="Avatar" width="50" height="50" />
 					<div className="flex flex-col ml-4">
 						<p className="blogHead__author">{props.author}</p>

@@ -74,7 +74,7 @@ function NavBar() {
               <img src={profileIcon} alt="profile" className="profileIcon" />
               <div className="dropdown-menu absolute w-max hidden pt-2">
                 <a className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap font-['Poppins'] text-gray-700"
-                  href="/profile">
+                  href="/view_profile">
                   View Profile</a>
                 <Link className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap font-['Poppins'] text-gray-700"
                   to="/">

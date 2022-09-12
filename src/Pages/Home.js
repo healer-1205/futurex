@@ -27,11 +27,11 @@ export const Home = () => {
                 <p className="name">dXX994</p>
                 <div className="detailed">
                   <div className="section">
-                    <p className="widgetLetter" style={{ marginLeft: 10 }}>Edit</p>
+                    <Link to="/edit_profile" className="widgetLetter" style={{ marginLeft: 10 }}>Edit</Link>
                     <img className="widgetIcon" src={Edit} alt="Edit" />
                   </div>
                   <div className="section">
-                    <p className="widgetLetter">View</p>
+                    <Link to="/view_profile" className="widgetLetter">View</Link>
                     <img className="widgetIcon" src={Edit} alt="View" />
                   </div>
                   <div className="section">
@@ -57,14 +57,14 @@ export const Home = () => {
                 <p className="title">Referrals</p>
               </div>
             </div>
-            <Link to="/profile" className="text-white mt-2.5 mb-5 border-white w-11/12 py-2 mx-auto rounded border-[1px] border-solid font-['Poppins'] non-italic font-medium font-xs text-center">
+            <Link to="/edit_profile" className="text-white mt-2.5 mb-5 border-white w-11/12 py-2 mx-auto rounded border-[1px] border-solid font-['Poppins'] non-italic font-medium font-xs text-center">
               Complete profile
             </Link>
           </div>
           <div className="wallet mx-auto">
             <p className="title">My Wallet</p>
             <Link to="/" className="text-[#7AF7FF] mt-5 border-[#7AF7FF] w-11/12 py-2 mx-auto rounded border-[1px] border-solid font-['Poppins'] non-italic font-medium font-xs text-center">
-              Complete profile
+              Connect your wallet
             </Link>
           </div>
         </div>
@@ -76,11 +76,11 @@ export const Home = () => {
                 <input type="text" placeholder="What's on your mind?" className="inputField" />
               </div>
             </div>
-            <button className="searchBox__button flex items-center justify-center xl:mr-5 lg:mr-3">
+            <button className="searchBox__imgbutton flex items-center justify-center xl:mr-5 lg:mr-3">
               <img src={ImageIcon} alt="ImageIcon" width="20" height="20" className="mr-1" />
               Add image
             </button>
-            <button className="searchBox__button flex items-center justify-center">
+            <button className="searchBox__sharebutton flex items-center justify-center">
               <img src={ShareIcon} alt="ShareIcon" width="20" height="20" className="mr-1" />
               Share your hiring
             </button>
