@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "scss/NavBar.scss";
 import Logo from "assets/images/navbar/logo.svg";
 import searchIcon from "assets/images/navbar/searchIcon.svg";
@@ -70,7 +70,17 @@ function NavBar() {
           </div>
 
           <div className="profile">
-            <img src={profileIcon} alt="profile" className="profileIcon" />
+            <div className="dropdown relative inline-block">
+              <img src={profileIcon} alt="profile" className="profileIcon" />
+              <div className="dropdown-menu absolute w-max hidden pt-2">
+                <Link className="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap font-['Poppins'] text-gray-700"
+                  to="/profile">
+                  View Profile</Link>
+                <Link className="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap font-['Poppins'] text-gray-700"
+                  to="/">
+                  Logout</Link>
+              </div>
+            </div>
           </div>
 
           <button className="postBtn">Post a Job</button>

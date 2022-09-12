@@ -6,6 +6,7 @@ import { Home } from "./Pages/Home";
 import { Network } from "./Pages/Network";
 import { Job } from "./Pages/Job";
 import { Message } from "./Pages/Message";
+import { Profile } from "Pages/Profile";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/network" component={Network} />
           <Route path="/jobs" component={Job} />
           <Route path="/messages" component={Message} />
+          <Route path="/profile" component={Profile} />
         </Switch>
         {/* </div> */}
         <Footer />
