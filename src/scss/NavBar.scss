@@ -22,7 +22,7 @@
 
 .nav-logo {
     align-items: center;
-    margin-left: 40px;
+    margin-left: 50px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -55,7 +55,10 @@
 
 .nav-item {
     /* line-height: 40px; */
-    margin-right: 60px;
+    margin-right: 70px;
+    @media screen and (max-width: 1050px) {
+        margin-right: 40px;
+    }
 }
 
 .nav-item:after {
@@ -102,6 +105,9 @@
         border: none;
         color: #ffffff;
         width: 135px;
+        @media screen and (max-width: 1050px) {
+            width: 95px;
+        }
     }
 
     .searchBox:focus-visible {
@@ -155,6 +161,9 @@
     text-align: center;
     color: #ffffff;
     margin-right: 40px;
+    @media screen and (max-width: 1050px) {
+        margin-right: 20px;
+    }
 }
 
 .postBtn:hover {

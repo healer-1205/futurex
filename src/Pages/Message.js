@@ -4,7 +4,7 @@ import PlusIcon from "assets/images/message/plusIcon.svg";
 
 export const Message = () => {
   return (
-    <div className="pt-7 lg:px-20 md: px-5">
+    <div className="pt-7 xl:px-10 lg:px-7 md:px-5 bg-[url('assets/images/background/Header.png')] bg-no-repeat bg-top bg-[length:100%_auto]">
       <div className="grid grid-cols-3">
         <div className="col-span-1 border-r-2 border-solid border-[#ffffff4d] border-opacity-30">
           <div className="mx-3 flex items-center justify-between">

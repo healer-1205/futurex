@@ -17,9 +17,9 @@ export const Home = () => {
   const [tabState, setTabState] = useState("forYou");
 
   return (
-    <div className="pt-7 lg:px-20 md: px-5 bg-[url('assets/images/background/Header.png')] bg-no-repeat bg-top bg-[length:100%_auto]">
+    <div className="pt-7 xl:px-10 lg:px-7 px-5 bg-[url('assets/images/background/Header.png')] bg-no-repeat bg-top bg-[length:100%_auto]">
       <div className="grid lg:grid-cols-4 grid-cols-1">
-        <div className="mine col-span-1">
+        <div className="mine col-span-1 mx-2.5">
           <div className="profile">
             <div className="top">
               <img src={ProfileIcon} alt="profileIcon" className="profileIcon" />
@@ -57,7 +57,7 @@ export const Home = () => {
                 <p className="title">Referrals</p>
               </div>
             </div>
-            <BasicButton color="#ffffff" marginTop="10px" borderColor="#FFFFFF">
+            <BasicButton color="#ffffff" marginTop="10px" marginBottom="20px" borderColor="#FFFFFF">
               Complete profile
             </BasicButton>
           </div>
@@ -68,7 +68,7 @@ export const Home = () => {
             </BasicButton>
           </div>
         </div>
-        <div className="lg:col-span-2 sm:col-span-1 mx-auto w-full blog">
+        <div className="lg:col-span-2 sm:col-span-1  mx-2.5 blog">
           <div className="searchBox">
             <img src={ProfileIcon} alt="ProfileIcon" className="profileIcon" />
             <div className="mindArea">
@@ -76,7 +76,7 @@ export const Home = () => {
                 <input type="text" placeholder="What's on your mind?" className="inputField" />
               </div>
             </div>
-            <button className="searchBox__button flex items-center justify-center mr-5">
+            <button className="searchBox__button flex items-center justify-center xl:mr-5 lg:mr-3">
               <img src={ImageIcon} alt="ImageIcon" width="20" height="20" className="mr-1" />
               Add image
             </button>
@@ -135,8 +135,8 @@ export const Home = () => {
           </div>
 
         </div>
-        <div className="suggested col-span-1">
-          <p className="suggested__title mx-5 lg:mt-0 mt-5">Suggested connection</p>
+        <div className="suggested col-span-1 mx-2.5">
+          <p className="suggested__title lg:mt-0 mt-5">Suggested connection</p>
           <div className="mt-5 grid grid-cols-2">
             <Connection name="Bob Zhang" job="Data Analyst at IQVIA" avatar={Avatar} />
             <Connection name="Bob Zhang" job="Data Analyst at IQVIA" avatar={Avatar} />

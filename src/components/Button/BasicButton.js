@@ -4,8 +4,9 @@ import styled from "styled-components";
 const Button = styled.button`
   color: ${(props) => props.childrenColor};
 	margin-top: ${(props) => props.marginTop};
+	margin-bottom: ${(props) => props.marginBottom};
 	border-color: ${(props) => props.borderColor};
-	width: 256px;
+	width: 90%;
 	height: 40px;
 	border-radius: 4px;
 	border: 1px solid;
@@ -19,7 +20,7 @@ const Button = styled.button`
 
 export const BasicButton = (props) => {
 	return (
-		<Button childrenColor={props.color} marginTop={props.marginTop} borderColor={props.borderColor} className="mx-auto">
+		<Button childrenColor={props.color} marginTop={props.marginTop} marginBottom={props.marginBottom} borderColor={props.borderColor} className="mx-auto">
 			{props.children}
 		</Button>
 	);

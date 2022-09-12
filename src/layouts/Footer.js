@@ -6,12 +6,12 @@ export const Footer = () => {
 		<div>
 			<div></div>
 			<div className="grid md:grid-cols-2 grid-cols-1 py-8">
-				<div className="flex flex-col lg:pl-28 lg:pr-36 px-6">
+				<div className="flex flex-col xl:pl-28 lg:pl-20 xl:pr-36 lg:pr-28 px-6">
 					<img src={Logo} alt="logo" width="157" height="52" />
 					<p className="font-['Poppins'] non-italic font-medium text-[14px] leading-6 text-center  mix-blend-normal opacity-80 text-white text-start pt-5">
 						Project Galaxy is on the mission to build an open, collaborative credential data network.
 					</p>
-					<button className="text-center border-[#4f46e5] border-2 rounded md:w-2/4 w-full text-[#4f46e5] py-2 mt-5">Get the lastest update</button>
+					<button className="text-center border-[#4f46e5] border-2 rounded xl:w-2/4 w-full text-[#4f46e5] py-2 mt-5">Get the lastest update</button>
 				</div>
 				<div className="flex flex-col lg:pr-24 px-6">
 					<div className="flex flex-row justify-around">

@@ -1,13 +1,12 @@
 $sm: 640px;
 $md: 768px;
 $lg: 1024px;
+$xl: 1280px;
 
 .mine {
     .profile {
         background: #1c1b2e;
         border-radius: 4px;
-        width: 280px;
-        height: 226px;
         display: flex;
         flex-direction: column;
         margin-left: auto;
@@ -15,8 +14,8 @@ $lg: 1024px;
         .top {
             display: flex;
             align-items: center;
+            justify-content: space-evenly;
             margin-top: 18px;
-            margin-left: 12px;
             .profileIcon {
                 width: 54px;
                 height: 54px;
@@ -25,7 +24,6 @@ $lg: 1024px;
             .info {
                 display: flex;
                 flex-direction: column;
-                margin-left: 10px;
                 .name {
                     font-family: "Poppins";
                     font-style: normal;
@@ -51,15 +49,22 @@ $lg: 1024px;
                             color: #ffffff;
                             mix-blend-mode: normal;
                             opacity: 0.8;
-                            margin-right: 4px;
+                            margin-right: 20px;
                             margin-left: 20px;
+                            @media screen and (max-width: 1280px) {
+                                margin-right: 8px;
+                                margin-left: 8px;
+                            }
+                            @media screen and (max-width: 1050px) {
+                                margin-right: 4px;
+                                margin-left: 4px;
+                            }
                         }
                     }
                 }
             }
         }
         .center {
-            width: 256px;
             height: 58px;
             background: #141422;
             mix-blend-mode: normal;
@@ -70,11 +75,20 @@ $lg: 1024px;
             position: relative;
             .line1 {
                 position: absolute;
-                left: 85.325px;
+                left: 105px;
+                @media screen and (max-width: 1050px) {
+                    left: 70px;
+                }
             }
             .line2 {
                 position: absolute;
-                left: 170.65px;
+                left: 210px;
+                @media screen and (max-width: 1450px) {
+                    left: 190px;
+                }
+                @media screen and (max-width: 1050px) {
+                    left: 130px;
+                }
             }
             .section {
                 display: flex;
@@ -105,7 +119,6 @@ $lg: 1024px;
         }
     }
     .wallet {
-        width: 280px;
         height: 122px;
         margin-top: 20px;
         background: #1c1b2e;
@@ -159,6 +172,10 @@ $lg: 1024px;
             border-radius: 18px 18px 18px 1px;
             padding: 1px;
             margin-right: 20px;
+            @media screen and (max-width: 1050px) {
+                width: 140px;
+                margin-right: 10px;
+            }
             &__inner {
                 background-color: #252436;
                 width: 100%;
@@ -173,6 +190,9 @@ $lg: 1024px;
                 width: 160px;
                 outline: none;
                 color: white;
+                @media screen and (max-width: 1050px) {
+                    width: 135px;
+                }
             }
             ::placeholder {
                 font-family: "Poppins";
@@ -198,13 +218,15 @@ $lg: 1024px;
             color: #ffffff;
             mix-blend-mode: normal;
             opacity: 0.6;
+            @media screen and (max-width: 1050px) {
+                width: 130px;
+            }
         }
     }
     .searchBox__mobile {
         display: none;
         background: #1c1b2e;
         border-radius: 4px;
-        width: 280px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
@@ -279,6 +301,9 @@ $lg: 1024px;
         font-size: 18px;
         line-height: 22px;
         color: #ffffff;
+        @media screen and (max-width: 1050px) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -394,4 +419,12 @@ $lg: 1024px;
     padding-left: 96px;
     padding-right: 96px;
     margin-top: 10px;
+    @media screen and (max-width: 1280px) {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    @media screen and (max-width: 1050px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }
