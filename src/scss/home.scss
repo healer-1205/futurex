@@ -427,4 +427,8 @@ $xl: 1280px;
         padding-left: 60px;
         padding-right: 60px;
     }
+    @media screen and (max-width: 450px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
 }

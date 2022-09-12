@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import "scss/home.scss";
-import { BasicButton } from "components/Button/BasicButton";
 import { Blog } from "components/Blog";
 import { Connection } from "components/Connection"
 import ProfileIcon from "assets/images/homepage/profileIcon.png";
@@ -57,15 +57,15 @@ export const Home = () => {
                 <p className="title">Referrals</p>
               </div>
             </div>
-            <BasicButton color="#ffffff" marginTop="10px" marginBottom="20px" borderColor="#FFFFFF">
+            <Link to="/profile" className="text-white mt-2.5 mb-5 border-white w-11/12 py-2 mx-auto rounded border-[1px] border-solid font-['Poppins'] non-italic font-medium font-xs text-center">
               Complete profile
-            </BasicButton>
+            </Link>
           </div>
           <div className="wallet mx-auto">
             <p className="title">My Wallet</p>
-            <BasicButton marginTop="20px" color="#7AF7FF" borderColor="#7AF7FF">
+            <Link to="/" className="text-[#7AF7FF] mt-5 border-[#7AF7FF] w-11/12 py-2 mx-auto rounded border-[1px] border-solid font-['Poppins'] non-italic font-medium font-xs text-center">
               Complete profile
-            </BasicButton>
+            </Link>
           </div>
         </div>
         <div className="lg:col-span-2 sm:col-span-1  mx-2.5 blog">
