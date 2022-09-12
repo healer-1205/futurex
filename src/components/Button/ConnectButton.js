@@ -16,6 +16,6 @@ const Button = styled.button`
 
 export const ConnectButton = () => {
 	return (
-		<Button className="m-auto my-2 py-1 px-2">Connect</Button>
+		<Button className="m-auto my-2 py-1 xl:px-9 lg:px-5 px-9">Connect</Button>
 	)
 }

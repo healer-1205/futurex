@@ -10,7 +10,7 @@ export const Blog = (props) => {
 		<div className="flex flex-col">
 			<div className="flex justify-between blogHead">
 				<div className="flex">
-					<img src={props.avatar} alt="Avatar" width="66" height="66" />
+					<img src={props.avatar} alt="Avatar" width="50" height="50" />
 					<div className="flex flex-col ml-4">
 						<p className="blogHead__author">{props.author}</p>
 						<p className="blogHead__intro">{props.intro}</p>
