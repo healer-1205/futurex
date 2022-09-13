@@ -1,0 +1,19 @@
+<svg width="184" height="184" viewBox="0 0 184 184" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="92" cy="92" r="82" fill="url(#paint0_linear_0_383)"/>
+<path d="M92 2C42.2944 2 2 42.2944 2 92C2 141.706 42.2944 182 92 182C141.706 182 182 141.706 182 92" stroke="url(#paint1_linear_0_383)" stroke-width="3"/>
+<ellipse cx="92.4236" cy="92.4185" rx="82.6416" ry="82.6368" stroke="#6B0DFF" stroke-width="3"/>
+<defs>
+<linearGradient id="paint0_linear_0_383" x1="86.8629" y1="-28.7059" x2="-26.0242" y2="101.59" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7FFBCE"/>
+<stop offset="0.594052" stop-color="#A17DFF"/>
+<stop offset="1" stop-color="#672CFF"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_383" x1="97.6651" y1="262.776" x2="259.217" y2="88.8215" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B7A5E3"/>
+<stop offset="0.338343" stop-color="#7ECDF8"/>
+<stop offset="0.57339" stop-color="#45FFED"/>
+<stop offset="0.834334" stop-color="#8AD6FF"/>
+<stop offset="1" stop-color="#45FFED"/>
+</linearGradient>
+</defs>
+</svg>
